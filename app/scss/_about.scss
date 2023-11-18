@@ -27,29 +27,34 @@
 
 .hackathon {
     display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    top: 100px;
-    left: 0px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 195%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     &__rectangle {
         width: 280px;
-        height: 400px;
-        background-color: aqua;
-        margin: 20px 0px;
+        height: 380px;
+        background-color: $white;
+        margin: 0px 25px;
+        border-radius: 20px;
     }
 
     &__rectangle2 {
         width: 280px;
-        height: 400px;
-        background-color: aqua;
-        margin: 20px 0px;
+        height: 380px;
+        background-color: $white;
+        margin: 0px 25px;
+        border-radius: 20px;
     }
 
     &__rectangle3 {
         width: 280px;
-        height: 400px;
-        background-color: aqua;
-        margin: 20px 0px;
+        height: 380px;
+        background-color: $white;
+        margin: 0px 25px;
+        border-radius: 20px;
     }
 }
