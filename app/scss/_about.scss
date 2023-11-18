@@ -1,0 +1,16 @@
+.about {
+    display: flex;
+
+    &__image {
+        position: relative;
+    }
+
+    &__text {
+        font-weight: bold;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 100%;
+        left: 65%;
+        transform: translate(-50%, 100%)
+    }
+}

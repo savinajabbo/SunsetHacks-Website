@@ -1,0 +1,30 @@
+.hero {
+
+    display: flex;
+    min-height: 109.125rem;
+    
+
+    &__image {
+        position: relative;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 35%);
+    }
+
+    &__text {
+        font-weight: bold;
+        font-size: 3.5rem;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__subtext {
+        position: absolute;
+        font-size: 1.6rem;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

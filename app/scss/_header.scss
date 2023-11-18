@@ -1,7 +1,13 @@
 .header {
+    position: sticky;
+    top: 0;
+    background-color: rgba($color: #ffffff, $alpha: 0.75);
+    z-index: 1;
+    backdrop-filter: blur(25px);
+
 
     nav {
-        padding: 1.0625rem 1.5rem;
+        padding: 0.5rem 1.5rem;
     }
 
     &__logo {
@@ -19,7 +25,7 @@
             display: block;
             width: 26px;
             height: 2px;
-            background-color: $darkBlue;
+            background-color: $darkBrown;
 
             &:not(:last-child){
                 margin-bottom: 3px;
@@ -31,7 +37,7 @@
 
         a {
             font-size: $font-sm;
-            color: $grayishBlue;
+            color: black;
             transition: color 200ms ease-in-out;
 
             &:not(:last-child){
@@ -39,7 +45,7 @@
             }
 
             &:hover {
-                color: $darkBlue;
+                color: $tan;
             }
         }
     }
