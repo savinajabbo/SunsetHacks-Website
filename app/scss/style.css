@@ -351,4 +351,8 @@ button, .button {
   background-color: #f0f0f0;
   margin: 0px 25px;
   border-radius: 20px;
+}
+
+.meet__header {
+  font-size: 30px;
 }/*# sourceMappingURL=style.css.map */
