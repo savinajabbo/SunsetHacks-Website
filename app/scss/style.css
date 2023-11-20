@@ -307,5 +307,51 @@ button, .button {
   }
 }
 .meet__header {
-  font-size: 30px;
+  font-size: 2rem;
+  text-align: center;
+}
+.meet__text {
+  font-size: 0.8rem;
+  text-align: center;
+  position: absolute;
+  top: 320%;
+  left: 26%;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 340%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icons__picture1 {
+  width: 12rem;
+  height: 12rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin: 25px 60px;
+}
+.icons__picture2 {
+  width: 12rem;
+  height: 12rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin: 25px 60px;
+}
+.icons__picture3 {
+  width: 12rem;
+  height: 12rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin: 25px 60px;
+}
+.icons__text1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=style.css.map */
