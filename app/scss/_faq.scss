@@ -1,17 +1,136 @@
-.faq {
+.card {
+    position: relative;
+    background-color: #fb8164;
+    border-radius: 2rem;
+    max-width: 56rem;
+    padding: 2.875rem 1.5rem;
+    align-items: center;
 
-    //make rectangles ?
-    //****figure out what you're going to do from figma****
+    &__text {
+        padding-top: 7rem;
+  }
 
+}
 
-    
-    // display: flex;
-    // position: absolute;
-    // top: 80%;
-    // left: 0;
+.accordion {
+    &__item {
+        padding-top: 1rem;
+        border-bottom: 1px solid var(--divider-blue);
+    }
 
+    &__item h2 {
+        margin-bottom: 0;
+    }
 
-    // width: 100vw;
-    // height: auto;
-    // background-repeat: no-repeat;
+    &__question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border: none;
+        background: transparent;
+        margin-bottom: 1rem;    
+        padding: 0.2rem;
+        font-size: 0.875rem;
+        font-family: 'Kumbh Sans', sans-serif;
+        text-align: left;
+    }
+
+    &__question.open {
+        font-weight: 700;
+    }
+
+    &__question::after {
+        content: '';
+        display: block;
+        width: 0.625rem;
+        height: 1rem;
+        border: none;
+        background-image: url('/websiteimages/arrow-down.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        transition: transform 300ms ease-in-out;
+    }
+
+    &__question:focus,
+    &__question:focus-visible {
+        border: none;
+        outline: dashed 0.75px rgba(0, 0, 0, 0.15);
+    }
+
+    &__question.open {
+        font-weight: 700;
+    }
+
+    &__question.open::after {
+        transform: rotate(180deg);
+    }
+
+    &__content {
+        font-size: 0.75rem;
+        line-height: 1.4;
+        padding-bottom: 1rem;
+    }
+
+    &__collapse {
+        transition: height 300ms ease;
+    }
+
+    &__collapse.collapse{
+        display: none;
+    }
+
+    &__collapse.collapsing {
+        height: 0;
+        overflow: hidden;
+        transition: height 300ms ease;
+    }
+
+    &__collapse.open {
+        display: block;
+    }
+}
+
+@media (min-width: 56em) {
+
+    .card {
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+        padding: 4.375rem 6.25rem;
+        transform: translateY(-14%);
+
+        &__box {
+            display: block;
+            position: absolute;
+            z-index: 1;
+            top: 57%;
+            left: 0;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        &__image,
+        &__text {
+            flex: 1;
+        }
+
+        &__image {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        &__image img {
+            position: relative;
+            top: auto;
+            left: auto;
+            max-width: 25rem;
+            transform: translateX(-4rem);
+        }
+
+        &__text {
+            padding-top: 0;
+        }
+    }
 }
