@@ -18,12 +18,14 @@
 <body>
 
   <header class="header">
+    <div class="overlay"></div>
+
     <nav class="flex flex-jc-sb flex-ai-c">
       <a href="/" class="header__logo">
         <img src="images/logo.svg" alt="Easybank" />
       </a>
 
-      <a href="#" class="header__menu hide-for-desktop">
+      <a id="btnHamburger" class="header__toggle hide-for-desktop">
         <span></span>
         <span></span>
         <span></span>
@@ -35,146 +37,15 @@
 
       <a href="#" class="button header__cta hide-for-mobile">Register Now</a>
     </nav>
+
+    <div class="header__menu">
+      <a href="">About</a>
+      <a href="">FAQ</a>
+      <a href="">Our Team</a>
+      <a href="">Contact</a>
+      <a href="">Donate</a>
+    </div>
   </header>
-
-  <section class="hero">
-    <div class="hero__image">
-      <a href="#">
-        <img src="/websiteimages/arrow.png" alt="arrow">
-      </a>
-    </div>
-    <div class="hero__text">
-      <h1>SunsetHacks</h1>
-    </div>
-    <div class="hero__subtext">
-      <p>a soCal hackathon</p>
-    </div>
-  </section>
-
-  <section class="about">
-    <div class="about__image">
-
-    </div>
-    <div class="about__text">
-      <h1>An incredible experience<br>at your fingertips.</h1>
-    </div>
-
-    <div class="about__subtext">
-      <p>SunsetHacks is a San Diego-based hackathon run for high schoolers, by high schoolers. We invite kids passionate about tech from all over the county to come together for 24 hours, where they can build software or hardware projects from scratch and compete for cool prizes. All experience levels are welcome!</p>
-    </div>
-    
-  </section>
-
-  <section class="hackathon">
-    <div class="hackathon__rectangle"></div>
-    <div class="hackathon__rectangle2"></div>
-    <div class="hackathon__rectangle3"></div>
-  </section>
-
-  <section class="faq">
-  </section>
-
-
- <!--    ------------  FAQ SECTION  ------------    -->
-
-  <section class="card">
-    <div class="card__text">
-      <h1>FAQ</h1>
-
-      <div class="accordion">
-        <div class="accordion__item">
-          <button class="accordion__question">
-            How much does it cost to attend?
-          </button>
-          <div class="accordion__collapse collapse">
-            <div class="accordion__content">
-              You can invite up to 2 additional users on the Free plan. There is no limit on 
-              team members for the Premium plan.
-            </div>
-          </div>
-        </div>
-        <div class="accordion__item">
-            <button class="accordion__question">
-              Who can attend SunsetHacks?
-            </button>
-          <div class="accordion__collapse collapse">
-            <div class="accordion__content">
-              No more than 2GB. All files in your account must fit your allotted storage space.
-            </div>
-          </div>
-        </div>
-        <div class="accordion__item">
-            <button class="accordion__question">
-              What if I can't code?
-            </button>
-          <div class="accordion__collapse collapse">
-            <div class="accordion__content">
-              Click “Forgot password” from the login page or “Change password” from your profile page.
-              A reset link will be emailed to you.
-            </div>
-          </div>
-        </div>
-        <div class="accordion__item">
-            <button class="accordion__question">
-              How many people can be on my team?
-            </button>
-          <div class="accordion__collapse collapse">
-            <div class="accordion__content">
-              Yes! Send us a message and we’ll process your request no questions asked.
-            </div>
-          </div>
-        </div>
-        <div class="accordion__item">
-            <button class="accordion__question">
-              Do you provide travel stipends?
-            </button>
-          <div class="accordion__collapse collapse">
-            <div class="accordion__content">
-              Chat and email support is available 24/7. Phone lines are open during normal business hours.
-            </div>
-          </div>
-        </div>
-        <div class="accordion__item">
-          <button class="accordion__question">
-            I have another question...
-          </button>
-        <div class="accordion__collapse collapse">
-          <div class="accordion__content">
-            Chat and email support is available 24/7. Phone lines are open during normal business hours.
-          </div>
-        </div>
-      </div>
-      </div>
-    </div>
-  </section>
-
-<!--  MEET THE TEAM  -->
-
-<section class="meet">
-  <div class="meet__header">
-    <h2>Meet the team</h2>
-  </div>
-  <div class="meet__text">
-    <p>We're a group of high school students from San Diego County who want to help you spark your passion<br>for all things tech. This hackathon is the culmination of our months-long effort to make that a reality.</p>
-  </div>
-</section>
-<section class="icons">
-  <div>
-    <img class="icons__picture1" src="/websiteimages/icons/savina.png" alt="solenn!">
-  </div>
-
-  <div>
-    <img class="icons__picture2" src="/websiteimages/icons/solenn.png" alt="solenn!">
-  </div>
-
-  <div>
-    <img class="icons__picture3" src="/websiteimages/icons/ana.png" alt="solenn!">
-  </div>
-</section>
-
-
-
-  <!--
 
   Request Invite
 
@@ -251,7 +122,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
--->
+
   <script src="app/js/script.js"></script>
 </body>
 </html>
