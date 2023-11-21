@@ -23,6 +23,7 @@ body {
     padding: 0;
     line-height: 1.3;
     min-height: 300vh;
+    overflow-x: hidden;
 
     @include breakpoint-up(large) {
         font-size: $font-med;
