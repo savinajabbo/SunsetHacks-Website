@@ -78,7 +78,7 @@ body.noscroll {
 }
 
 h1, h2, h3 {
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1.15;
   color: black;
   margin-top: 0px;
@@ -95,13 +95,13 @@ h1 {
 }
 
 h2 {
-  font-size: 1.875;
-  margin-bottom: 1.5625rem;
+  font-size: 2rem;
+  margin-bottom: 1.85rem;
 }
 @media (min-width: 64em) {
   h2 {
     font-size: 2.25rem;
-    margin-bottom: 2.25rem;
+    margin-bottom: 2.85rem;
   }
 }
 
@@ -301,6 +301,7 @@ button, .button {
   .hero .container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
 }
 .hero__image {
@@ -438,9 +439,20 @@ button, .button {
 }
 
 .articles {
-  background-color: hsl(0, 0%, 98%);
+  background-color: hsla(0, 0%, 100%, 0);
+  position: absolute;
+  top: 110%;
 }
 
+.article__content {
+  text-align: center;
+}
+@media (min-width: 64em) {
+  .article__content h2 {
+    text-align: center;
+    width: 170.61%;
+  }
+}
 .article__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -463,6 +475,7 @@ button, .button {
 }
 .article__image {
   height: 12.5rem;
+  background-color: rgba(0, 0, 0, 0);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -476,14 +489,11 @@ button, .button {
     padding: 1.875rem 1.5625rem;
   }
 }
-.article__author {
-  font-size: 0.625rem;
-  margin-bottom: 0.75rem;
-}
 .article__title {
   font-size: 1.0625rem;
   line-height: 1.2;
-  color: hsl(233, 26%, 24%);
+  color: black;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 .article__description {
