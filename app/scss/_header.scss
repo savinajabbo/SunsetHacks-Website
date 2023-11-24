@@ -1,9 +1,9 @@
 .header {
-    // position: sticky;
-    // top: 0;
-    // background-color: rgba($color: #ffffff, $alpha: 0.75);
-    // z-index: 1;
-    // backdrop-filter: blur(25px);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    backdrop-filter: blur(1.5625rem);
+    width: 100%;
 
     //Hamburger Open Styles
     &.open {
@@ -36,7 +36,7 @@
 
     nav {
         position: relative;
-        background-color: white;
+        background-color: rgba($color: #f0f0f0, $alpha: 0.55);
         padding-top: 1.0625rem;
         padding-bottom: 1.0625rem;
     }
