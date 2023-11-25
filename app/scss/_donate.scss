@@ -1,5 +1,4 @@
 .donate {
-
     margin: 1.125rem auto;
 
     &__text {
@@ -17,6 +16,8 @@
         color: white;
         position: relative;
         margin: auto 2rem;
+        border-left: 3px black solid;
+        border-bottom: 3.5px black solid;
     }
 
     &__b1 {

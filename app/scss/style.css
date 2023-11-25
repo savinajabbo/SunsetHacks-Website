@@ -181,6 +181,8 @@ a, a:visited, a:hover {
 }
 
 button, .button {
+  position: relative;
+  display: inline-block;
   padding: 0.875rem 2.1875rem;
   background: #fb8164;
   border: 0;
@@ -189,6 +191,22 @@ button, .button {
   color: black;
   font-weight: 400;
   font-size: 0.875rem;
+  transition: opacity 300ms ease-in-out;
+  overflow: hidden;
+}
+button::before, .button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+button:hover::before, .button:hover::before {
+  opacity: 1;
 }
 
 @media (max-width: 63.9375em) {
@@ -282,10 +300,6 @@ button, .button {
 }
 .header__cta {
   color: #f0f0f0;
-  transition: opacity 300ms ease-in-out;
-}
-.header__cta:hover {
-  opacity: 0.75;
 }
 
 .hero {
@@ -508,7 +522,7 @@ button, .button {
 }
 
 .footer {
-  background-color: hsl(233, 26%, 24%);
+  background-color: #362c28;
   color: white;
   padding: 2.5rem;
   text-align: center;
@@ -554,6 +568,12 @@ button, .button {
   display: inline-block;
   height: 1.25rem;
 }
+.footer__social a svg path {
+  transition: fill 150ms ease-in-out;
+}
+.footer__social a:hover svg path {
+  fill: #fcccbc;
+}
 .footer__social a:not(:last-child) {
   margin-right: 1rem;
 }
@@ -586,6 +606,10 @@ button, .button {
 }
 .footer__links a {
   line-height: 2.25;
+  transition: color 150ms ease-in-out;
+}
+.footer__links a:hover {
+  color: #fcccbc;
 }
 @media (min-width: 64em) {
   .footer__cta {
@@ -601,7 +625,7 @@ button, .button {
 }
 .footer__copyright {
   font-size: 0.8125rem;
-  color: hsl(233, 8%, 62%);
+  color: rgba(255, 255, 255, 0.7);
 }
 @media (min-width: 64em) {
   .footer__copyright {
@@ -812,6 +836,8 @@ button, .button {
   color: white;
   position: relative;
   margin: auto 2rem;
+  border-left: 3px black solid;
+  border-bottom: 3.5px black solid;
 }
 .donate__b1 {
   background-color: #fcccbc;
