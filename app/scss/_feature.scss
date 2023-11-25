@@ -1,6 +1,8 @@
 .feature {
-    background-color: hsl(220, 16%, 96%);
+    background-color: rgba(249, 219, 215, 0.30);
     text-align: center;
+    margin-top: -9.375rem;
+    padding-top: 3.75rem;
 
     h2 {
         @include breakpoint-up(large) {
@@ -58,9 +60,9 @@
 
     &__title {
         font-size: 1.25rem;
-        font-weight: 300;
+        font-weight: 700;
         line-height: 1.15;
-        color: hsl(233, 26%, 24%);
+        color: black;
         margin-bottom: 0; //change
 
         @include breakpoint-up(large) {

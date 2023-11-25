@@ -1,0 +1,30 @@
+.donate {
+
+    margin: 1.125rem auto;
+
+    &__text {
+
+        text-align: center;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button {
+        color: white;
+        position: relative;
+        margin: auto 2rem;
+    }
+
+    &__b1 {
+        background-color: $peach;
+    }
+
+    &__b2 {
+        background-color: $orange;
+
+    }
+}
