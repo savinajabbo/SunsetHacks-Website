@@ -186,7 +186,7 @@ button, .button {
   border: 0;
   border-radius: 50px;
   cursor: pointer;
-  color: #f0f0f0;
+  color: black;
   font-weight: 400;
   font-size: 0.875rem;
 }
@@ -441,7 +441,12 @@ button, .button {
 .articles {
   background-color: hsla(0, 0%, 100%, 0);
   position: absolute;
-  top: 110%;
+  top: 88%;
+}
+@media (min-width: 40em) {
+  .articles {
+    top: 110%;
+  }
 }
 
 .article__content {
@@ -660,14 +665,24 @@ button, .button {
 
 .card {
   position: relative;
-  background-color: #fb8164;
+  background-color: white;
   border-radius: 2rem;
+  border-left: 6.66px #FD735E solid;
+  border-bottom: 6.66px #FD735E solid;
   max-width: 56rem;
   padding: 2.875rem 1.5rem;
   align-items: center;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 .card__text {
   padding-top: 7rem;
+}
+@media (max-width: 39.9375em) {
+  .card {
+    margin-top: 193px;
+    padding: 0 1.5rem;
+  }
 }
 
 .accordion__item {
@@ -716,7 +731,7 @@ button, .button {
   transform: rotate(180deg);
 }
 .accordion__content {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   line-height: 1.4;
   padding-bottom: 1rem;
 }
@@ -768,6 +783,16 @@ button, .button {
   }
   .card__text {
     padding-top: 0;
+  }
+}
+@media (max-width: 32em) {
+  .card {
+    margin-top: 230px;
+  }
+}
+@media (max-width: 27em) {
+  .card {
+    margin-top: 320px;
   }
 }
 .meet__header {

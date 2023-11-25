@@ -1,7 +1,11 @@
 .articles {
     background-color: hsla(0, 0%, 100%, 0);
     position: absolute;
-    top: 110%;
+    top: 88%;
+
+    @include breakpoint-up(medium) {
+        top: 110%;
+    }    
 }
 
 .article {
