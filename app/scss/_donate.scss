@@ -9,23 +9,33 @@
     &__button {
         display: flex;
         justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
+
+        @include breakpoint-up(medium) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
     }
 
     .button {
         color: white;
-        position: relative;
-        margin: auto 2rem;
         border-left: 3px black solid;
         border-bottom: 3.5px black solid;
+        text-align: center;
+        background-color: $orange;
+        margin: auto 0.625rem;
+
+        @include breakpoint-up(medium) {
+            margin: auto 2rem;
+        }
     }
 
     &__b1 {
-        background-color: $orange;
     }
 
     &__b2 {
-        background-color: $orange;
 
     }
 }

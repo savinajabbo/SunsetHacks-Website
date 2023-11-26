@@ -191,6 +191,7 @@ button, .button {
   font-size: 0.875rem;
   transition: opacity 300ms ease-in-out;
   overflow: hidden;
+  text-align: center;
 }
 button::before, .button::before {
   content: "";
@@ -365,7 +366,7 @@ button:hover::before, .button:hover::before {
   margin-right: auto;
   margin-bottom: 5.5rem;
   margin-left: auto;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 @media (min-width: 40em) {
   .hero__text h1 {
@@ -554,7 +555,7 @@ button:hover::before, .button:hover::before {
 @media (min-width: 64em) {
   .bear__faq {
     position: relative;
-    transform: translate(900%, -81%);
+    transform: translate(900%, -190%);
     visibility: visible;
   }
 }
@@ -868,22 +869,29 @@ button:hover::before, .button:hover::before {
 .donate__button {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+}
+@media (min-width: 40em) {
+  .donate__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
 }
 .donate .button {
   color: white;
-  position: relative;
-  margin: auto 2rem;
   border-left: 3px black solid;
   border-bottom: 3.5px black solid;
-}
-.donate__b1 {
+  text-align: center;
   background-color: #fb8164;
+  margin: auto 0.625rem;
 }
-.donate__b2 {
-  background-color: #fb8164;
+@media (min-width: 40em) {
+  .donate .button {
+    margin: auto 2rem;
+  }
 }
-
 .meet__header {
   font-size: 2rem;
   text-align: center;

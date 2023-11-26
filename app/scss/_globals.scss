@@ -160,6 +160,7 @@ button, .button {
     font-size: $font-sm;
     transition: opacity 300ms ease-in-out;
     overflow: hidden;
+    text-align: center;
 
     &::before {
         content: "";
