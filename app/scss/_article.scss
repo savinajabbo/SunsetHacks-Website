@@ -71,4 +71,22 @@
     &__description {
         font-size: 0.8125rem;
     }
+
+
+}
+
+.bear__logo {
+    width: 65px;
+    position: relative;
+    transform: translate(46px, -1471px);
+
+    @include breakpoint-up(medium) {
+        transform: translate(84px, -575px);
+    }
+
+    @include breakpoint-up(large) {
+        width: 130px;
+        transform: translate(89px, -601px); 
+    }
+
 }

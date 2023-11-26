@@ -375,7 +375,7 @@ button:hover::before, .button:hover::before {
 }
 @media (min-width: 40em) {
   .hero__text p {
-    font-size: 2.25rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -383,7 +383,7 @@ button:hover::before, .button:hover::before {
   background-color: rgba(249, 219, 215, 0.3);
   text-align: center;
   margin-top: -9.375rem;
-  padding-top: 3.75rem;
+  padding-top: 7.75rem;
 }
 @media (min-width: 64em) {
   .feature h2 {
@@ -519,6 +519,23 @@ button:hover::before, .button:hover::before {
 }
 .article__description {
   font-size: 0.8125rem;
+}
+
+.bear__logo {
+  width: 65px;
+  position: relative;
+  transform: translate(46px, -1471px);
+}
+@media (min-width: 40em) {
+  .bear__logo {
+    transform: translate(84px, -575px);
+  }
+}
+@media (min-width: 64em) {
+  .bear__logo {
+    width: 130px;
+    transform: translate(89px, -601px);
+  }
 }
 
 .footer {
