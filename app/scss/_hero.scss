@@ -85,7 +85,7 @@
         }
 
         h1 {
-            font-size: 4rem;
+            font-size: 3.5rem;
 
             @include breakpoint-up(medium) {
                 font-size: 6rem;
@@ -103,7 +103,7 @@
         }
 
         .date {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
     }
 }

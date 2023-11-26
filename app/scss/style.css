@@ -364,7 +364,7 @@ button:hover::before, .button:hover::before {
   }
 }
 .hero__text h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 @media (min-width: 40em) {
   .hero__text h1 {
@@ -382,7 +382,7 @@ button:hover::before, .button:hover::before {
   }
 }
 .hero__text .date {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .feature {
@@ -531,16 +531,30 @@ button:hover::before, .button:hover::before {
   width: 65px;
   position: relative;
   transform: translate(46px, -1471px);
+  visibility: hidden;
 }
 @media (min-width: 40em) {
   .bear__logo {
     transform: translate(84px, -575px);
+    visibility: visible;
   }
 }
 @media (min-width: 64em) {
   .bear__logo {
     width: 130px;
     transform: translate(89px, -601px);
+    visibility: visible;
+  }
+}
+.bear__faq {
+  width: 90px;
+  visibility: hidden;
+}
+@media (min-width: 64em) {
+  .bear__faq {
+    position: relative;
+    transform: translate(900%, -81%);
+    visibility: visible;
   }
 }
 

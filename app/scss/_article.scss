@@ -75,18 +75,35 @@
 
 }
 
-.bear__logo {
-    width: 65px;
-    position: relative;
-    transform: translate(46px, -1471px);
+.bear {
+    &__logo {
+        width: 65px;
+        position: relative;
+        transform: translate(46px, -1471px);
+        visibility: hidden;
 
-    @include breakpoint-up(medium) {
-        transform: translate(84px, -575px);
+        @include breakpoint-up(medium) {
+            transform: translate(84px, -575px);
+            visibility: visible;
+        }
+
+        @include breakpoint-up(large) {
+            width: 130px;
+            transform: translate(89px, -601px); 
+            visibility: visible;
+        }
+
     }
 
-    @include breakpoint-up(large) {
-        width: 130px;
-        transform: translate(89px, -601px); 
-    }
+    &__faq {
+        width: 90px;
+        visibility: hidden;
 
+        @include breakpoint-up(large) {
+            position: relative;
+            transform: translate(900%, -81%);
+            visibility: visible;
+        }
+
+    }
 }
