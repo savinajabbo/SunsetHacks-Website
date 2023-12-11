@@ -15,8 +15,10 @@
 
         h2 {
             @include breakpoint-up(large) {
+                display: flex;
                 text-align: center;
                 width: 170.61%;
+                transform: translate(19%, 10%);
             }
         }
     }
@@ -101,7 +103,7 @@
 
         @include breakpoint-up(large) {
             position: relative;
-            transform: translate(900%, -190%);
+            transform: translate(900%, -149%);
             visibility: visible;
         }
 
