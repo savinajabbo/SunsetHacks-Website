@@ -16,7 +16,6 @@
         h2 {
             @include breakpoint-up(large) {
                 text-align: center;
-                width: 170.61%;
             }
         }
     }
@@ -40,6 +39,7 @@
 
         &:hover {
             transform: scale(1.05);
+            cursor: default;
         }
     }
 
@@ -101,7 +101,7 @@
 
         @include breakpoint-up(large) {
             position: relative;
-            transform: translate(900%, -190%);
+            transform: translate(900%, -167%);
             visibility: visible;
         }
 

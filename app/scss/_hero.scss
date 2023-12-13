@@ -28,12 +28,6 @@
             background-position: center 18%;
         }
 
-        @include breakpoint-up(large) {
-            flex: 3;
-            order: 2;
-            height: 77rem;
-        }
-
         &::before {
 
             @include breakpoint-up(large) {

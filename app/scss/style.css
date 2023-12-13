@@ -182,7 +182,7 @@ button, .button {
   position: relative;
   display: inline-block;
   padding: 0.875rem 2.1875rem;
-  background: #fcccbc;
+  background: #fb8164;
   border: 0;
   border-radius: 50px;
   cursor: pointer;
@@ -334,13 +334,6 @@ button:hover::before, .button:hover::before {
   }
 }
 @media (min-width: 64em) {
-  .hero__image {
-    flex: 3;
-    order: 2;
-    height: 77rem;
-  }
-}
-@media (min-width: 64em) {
   .hero__image::before {
     content: "";
     position: absolute;
@@ -479,7 +472,6 @@ button:hover::before, .button:hover::before {
 @media (min-width: 64em) {
   .article__content h2 {
     text-align: center;
-    width: 170.61%;
   }
 }
 .article__grid {
@@ -501,6 +493,7 @@ button:hover::before, .button:hover::before {
 }
 .article__item:hover {
   transform: scale(1.05);
+  cursor: default;
 }
 .article__image {
   height: 12.5rem;
@@ -555,7 +548,7 @@ button:hover::before, .button:hover::before {
 @media (min-width: 64em) {
   .bear__faq {
     position: relative;
-    transform: translate(900%, -190%);
+    transform: translate(900%, -167%);
     visibility: visible;
   }
 }
