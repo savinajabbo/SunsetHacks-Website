@@ -255,8 +255,7 @@ button:hover::before, .button:hover::before {
   padding-bottom: 1.0625rem;
 }
 .header__logo img {
-  width: 8.8125rem;
-  height: 1.375rem;
+  height: 2.375rem;
 }
 .header__toggle {
   cursor: pointer;
@@ -792,6 +791,14 @@ button:hover::before, .button:hover::before {
   line-height: 1.4;
   padding-bottom: 1rem;
 }
+.accordion__content a {
+  color: #fb8164;
+  opacity: 1;
+}
+.accordion__content a:hover {
+  transition: opacity 150ms ease-in-out;
+  opacity: 0.75;
+}
 .accordion__collapse {
   transition: height 300ms ease;
 }
@@ -863,7 +870,13 @@ button:hover::before, .button:hover::before {
   }
 }
 .donate {
-  margin: 1.125rem auto;
+  margin-top: 1.125rem;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.donate .container {
+  padding-bottom: 0rem;
 }
 .donate__text {
   text-align: center;
@@ -894,6 +907,12 @@ button:hover::before, .button:hover::before {
     margin: auto 2rem;
   }
 }
+
+.bear__donate {
+  width: 150px;
+  transform: translate(500%, 7%);
+}
+
 .meet__header {
   font-size: 2rem;
   text-align: center;

@@ -1,5 +1,12 @@
 .donate {
-    margin: 1.125rem auto;
+    margin-top: 1.125rem;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .container {
+        padding-bottom: 0rem;
+    }
 
     &__text {
 
@@ -32,10 +39,11 @@
         }
     }
 
-    &__b1 {
-    }
-
-    &__b2 {
-
-    }
 }
+
+.bear__donate {
+    width: 150px;
+    transform: translate(500%, 7%);
+}
+
+ 

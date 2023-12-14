@@ -80,6 +80,16 @@
         font-size: 0.85rem;
         line-height: 1.4;
         padding-bottom: 1rem;
+
+        a {
+            color: $orange;
+            opacity: 1.0;
+        }
+
+        a:hover {
+            transition: opacity 150ms ease-in-out;
+            opacity: 0.75;
+        }
     }
 
     &__collapse {
