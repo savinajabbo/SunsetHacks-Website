@@ -546,7 +546,7 @@ button:hover::before, .button:hover::before {
 @media (min-width: 64em) {
   .bear__faq {
     position: relative;
-    transform: translate(900%, -167%);
+    transform: translate(900%, -191%);
     visibility: visible;
   }
 }
