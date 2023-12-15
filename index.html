@@ -49,7 +49,7 @@
           SunsetHacks
         </h1>
         <p>
-          a high school <strong>hackathon.</strong>
+          a <span class="auto-type">high school <strong>hackathon.</strong></span>
         </p>
         <p class="date">
           date tbd<br>
@@ -294,5 +294,15 @@
   </footer>
 
   <script src="app/js/script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: ["high school hackathon.", "hack club hackathon.", "san diego hackathon."],
+      typeSpeed: 300,
+      backSpeed: 300,
+      loop: true
+    })
+
+  </script>
 </body>
 </html>
