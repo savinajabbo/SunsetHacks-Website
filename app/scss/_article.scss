@@ -24,6 +24,7 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 1.875rem;
+        cursor: default;
 
         @include breakpoint-up(medium) {
             grid-template-columns: repeat(3, 1fr);
