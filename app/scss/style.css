@@ -252,7 +252,7 @@ button:hover::before, .button:hover::before {
   position: relative;
   background-color: rgba(240, 240, 240, 0.55);
   padding-top: 1.0625rem;
-  padding-bottom: 1.0625rem;
+  padding-bottom: 0.5625rem;
 }
 .header__logo img {
   width: 10.8675rem;
@@ -664,6 +664,24 @@ button:hover::before, .button:hover::before {
     align-self: end;
     justify-self: end;
   }
+}
+
+.sponsor__text {
+  margin: 0;
+  padding: 0.3rem;
+  text-align: center;
+  font-size: 0.8125rem;
+  background-color: #362c28;
+  letter-spacing: 0.125rem;
+  color: #f6e5e2;
+}
+.sponsor__text a {
+  color: #fb8164;
+  line-height: 2.25;
+  transition: color 150ms ease-in-out;
+}
+.sponsor__text a:hover {
+  color: #f6e5e2;
 }
 
 .about {

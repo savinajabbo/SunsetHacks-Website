@@ -131,3 +131,25 @@
     }
 
 }
+
+.sponsor {
+    &__text {
+        margin: 0;
+        padding: 0.3rem;
+        text-align: center;
+        font-size: 0.8125rem;
+        background-color: $darkBrown;
+        letter-spacing: 0.125rem;
+        color:$lightPeach;
+
+        a {
+            color: $orange;
+            line-height: 2.25;
+            transition: color 150ms ease-in-out;
+
+            &:hover {
+                color:$lightPeach;
+            }
+        }
+    }
+}
