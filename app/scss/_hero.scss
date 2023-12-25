@@ -15,7 +15,11 @@
 
     &__arrow {
         position: relative;
-        transform: translate(0%, 1500%);
+        transform: translate(0%, 1000%);
+
+        @include breakpoint-up(xlarge) {
+            transform: translate(0%, 1500%);
+        }
     }
 
     &__image {

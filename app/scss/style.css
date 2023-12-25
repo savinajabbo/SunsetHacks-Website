@@ -334,7 +334,12 @@ button:hover::before, .button:hover::before {
 }
 .hero__arrow {
   position: relative;
-  transform: translate(0%, 1500%);
+  transform: translate(0%, 1000%);
+}
+@media (min-width: 87.5em) {
+  .hero__arrow {
+    transform: translate(0%, 1500%);
+  }
 }
 .hero__image {
   position: relative;
