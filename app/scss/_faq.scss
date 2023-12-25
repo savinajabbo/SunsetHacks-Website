@@ -118,7 +118,7 @@
         display: flex;
         margin: 0 auto;
         padding: 4.375rem 6.25rem;
-        transform: translateY(-14%);
+        transform: translateY(8%);
 
         &__box {
             display: block;
@@ -151,6 +151,16 @@
         &__text {
             padding-top: 0;
         }
+
+        @include breakpoint-up(xlarge) {
+            position: relative;
+            display: flex;
+            margin: 0 auto;
+            margin-bottom: 6rem;
+            margin-top: 7rem;
+            padding: 4.375rem 6.25rem;
+            transform: translateY(8%);
+        }
     }
 }
 
@@ -182,4 +192,18 @@
         margin-top: 36rem;
     }
     
+}
+
+.bear {
+    &__faq {
+        width: 90px;
+        visibility: hidden;
+
+        @include breakpoint-up(large) {
+            position: absolute;
+            transform: translate(620%, -431%);
+            visibility: visible;
+        }
+
+    }
 }

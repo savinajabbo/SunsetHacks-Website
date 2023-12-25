@@ -28,6 +28,20 @@ btnHamburger.addEventListener('click', function(){
 });
 
 
+// Get the menu element
+var menu = document.getElementById("menu");
+
+// Get all the nav links
+var navLinks = document.querySelectorAll("a");
+
+// Loop through the nav links and add an event listener
+for (var i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener("click", function() {
+    // Hide the menu
+    menu.style.display = "none";
+  });
+}
+
 // FAQ ANIMATION
 document.querySelectorAll('.accordion__question').forEach((item) => {
     item.addEventListener('click', (event) => {

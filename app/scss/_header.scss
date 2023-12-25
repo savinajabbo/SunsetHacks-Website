@@ -4,8 +4,11 @@
     left: 0;
     right: 0;
     z-index: 1;
-    backdrop-filter: blur(1.5625rem);
     width: 100%;
+
+    @include breakpoint-up(large) {
+        backdrop-filter: blur(1.5625rem);
+    }
 
     //Hamburger Open Styles
     &.open {
@@ -38,9 +41,13 @@
 
     nav {
         position: relative;
-        background-color: rgba($color: #f0f0f0, $alpha: 0.55);
+        background-color: rgba($color: #f0f0f0, $alpha: 0.85);
         padding-top: 1.0625rem;
         padding-bottom: 0.5625rem;
+
+        @include breakpoint-up(large) {
+            background-color: rgba($color: #f0f0f0, $alpha: 0.55);;
+        }
     }
 
     &__logo {

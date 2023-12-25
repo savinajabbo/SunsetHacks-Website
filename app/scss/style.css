@@ -43,6 +43,7 @@ html {
   box-sizing: border-box;
   overflow-x: hidden;
   max-width: 100%;
+  scroll-behavior: smooth;
 }
 html ::-moz-selection {
   background-color: #f9dcd8;
@@ -64,16 +65,21 @@ html ::-moz-selection {
 body {
   background-image: url("/websiteimages/sunsetbackground.png");
   background-repeat: no-repeat;
+  background-size: auto;
   margin: 0;
   padding: 0;
   line-height: 1.3;
   min-height: 300vh;
   overflow-x: hidden;
-  max-width: 100%;
 }
 @media (min-width: 64em) {
   body {
     font-size: 1.125rem;
+  }
+}
+@media (min-width: 87.5em) {
+  body {
+    background-size: 100% 50%;
   }
 }
 body.noscroll {
@@ -226,9 +232,13 @@ button:hover::before, .button:hover::before {
   left: 0;
   right: 0;
   z-index: 1;
-  -webkit-backdrop-filter: blur(1.5625rem);
-          backdrop-filter: blur(1.5625rem);
   width: 100%;
+}
+@media (min-width: 64em) {
+  .header {
+    -webkit-backdrop-filter: blur(1.5625rem);
+            backdrop-filter: blur(1.5625rem);
+  }
 }
 .header.open .header__toggle > span:first-child {
   transform: rotate(45deg);
@@ -250,9 +260,14 @@ button:hover::before, .button:hover::before {
 }
 .header nav {
   position: relative;
-  background-color: rgba(240, 240, 240, 0.55);
+  background-color: rgba(240, 240, 240, 0.85);
   padding-top: 1.0625rem;
   padding-bottom: 0.5625rem;
+}
+@media (min-width: 64em) {
+  .header nav {
+    background-color: rgba(240, 240, 240, 0.55);
+  }
 }
 .header__logo img {
   width: 10.8675rem;
@@ -319,7 +334,7 @@ button:hover::before, .button:hover::before {
 }
 .hero__arrow {
   position: relative;
-  transform: translate(0%, 1000%);
+  transform: translate(0%, 1500%);
 }
 .hero__image {
   position: relative;
@@ -376,6 +391,12 @@ button:hover::before, .button:hover::before {
 @media (min-width: 40em) {
   .hero__text p {
     font-size: 1.8rem;
+    margin-top: 2.25rem;
+  }
+}
+@media (min-width: 87.5em) {
+  .hero__text p {
+    margin-top: 6rem;
   }
 }
 .hero__text .date {
@@ -459,12 +480,11 @@ button:hover::before, .button:hover::before {
 
 .articles {
   background-color: hsla(0, 0%, 100%, 0);
-  position: absolute;
-  top: 88%;
+  transform: translate(0, 28%);
 }
-@media (min-width: 40em) {
+@media (min-width: 87.5em) {
   .articles {
-    top: 110%;
+    transform: translate(0, 35%);
   }
 }
 
@@ -541,17 +561,6 @@ button:hover::before, .button:hover::before {
   .bear__logo {
     width: 130px;
     transform: translate(89px, -601px);
-    visibility: visible;
-  }
-}
-.bear__faq {
-  width: 90px;
-  visibility: hidden;
-}
-@media (min-width: 64em) {
-  .bear__faq {
-    position: relative;
-    transform: translate(900%, -185%);
     visibility: visible;
   }
 }
@@ -843,7 +852,7 @@ button:hover::before, .button:hover::before {
     display: flex;
     margin: 0 auto;
     padding: 4.375rem 6.25rem;
-    transform: translateY(-14%);
+    transform: translateY(8%);
   }
   .card__box {
     display: block;
@@ -872,6 +881,17 @@ button:hover::before, .button:hover::before {
     padding-top: 0;
   }
 }
+@media (min-width: 56em) and (min-width: 87.5em) {
+  .card {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    margin-top: 7rem;
+    padding: 4.375rem 6.25rem;
+    transform: translateY(8%);
+  }
+}
 @media (max-width: 32em) {
   .card {
     margin-top: 19.375rem;
@@ -892,6 +912,18 @@ button:hover::before, .button:hover::before {
     margin-top: 36rem;
   }
 }
+.bear__faq {
+  width: 90px;
+  visibility: hidden;
+}
+@media (min-width: 64em) {
+  .bear__faq {
+    position: absolute;
+    transform: translate(620%, -431%);
+    visibility: visible;
+  }
+}
+
 .donate {
   margin-top: 1.125rem;
   margin-bottom: 0;
