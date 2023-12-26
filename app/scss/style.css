@@ -688,10 +688,15 @@ button:hover::before, .button:hover::before {
   margin: 0;
   padding: 0.3rem;
   text-align: center;
-  font-size: 0.8125rem;
+  font-size: 0.5125rem;
   background-color: #362c28;
   letter-spacing: 0.125rem;
   color: #f6e5e2;
+}
+@media (min-width: 40em) {
+  .sponsor__text {
+    font-size: 0.8125rem;
+  }
 }
 .sponsor__text a {
   color: #fb8164;

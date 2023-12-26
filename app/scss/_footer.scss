@@ -137,10 +137,14 @@
         margin: 0;
         padding: 0.3rem;
         text-align: center;
-        font-size: 0.8125rem;
+        font-size: 0.5125rem;
         background-color: $darkBrown;
         letter-spacing: 0.125rem;
         color:$lightPeach;
+
+        @include breakpoint-up(medium) {
+            font-size: 0.8125rem;
+        }
 
         a {
             color: $orange;
