@@ -53,10 +53,14 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+    }
 
-        @include breakpoint-up(medium) {
+    @media (min-width: 75em) {
+
+        .article__image {
             height: 12.5rem;
         }
+        
     }
 
     &__text {
