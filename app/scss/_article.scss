@@ -11,10 +11,6 @@
 
     &__content {
         text-align: center;
-        padding-top: 4.375rem;
-        padding-right: 1.5rem;
-        padding-bottom: 0.375rem;
-        padding-left: 1.5rem;
 
         h2 {
             @include breakpoint-up(large) {
@@ -48,19 +44,11 @@
     }
 
     &__image {
-        height: 1.5rem;
+        height: 12.5rem;
         background-color: rgba(0, 0, 0, 0);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-    }
-
-    @media (min-width: 75em) {
-
-        .article__image {
-            height: 12.5rem;
-        }
-        
     }
 
     &__text {
