@@ -15,7 +15,7 @@
   }
 
   @include breakpoint-down(small) {
-    margin-top: 17rem;
+    margin-top: 28rem;
     padding: 0 1.5rem;
   }
 
@@ -167,7 +167,7 @@
 @media (max-width: 32em) {
 
     .card {
-        margin-top: 19.375rem;
+        margin-top: 31.375rem;
     }
     
 }
@@ -175,21 +175,21 @@
 @media (max-width: 26.25em) {
 
     .card {
-        margin-top: 25.375rem;
+        margin-top: 38.375rem;
     }
     
 }
 
 @media (max-width: 22em) {
     .card {
-        margin-top: 30rem;
+        margin-top: 45rem;
     }
     
 }
 
 @media (max-width: 18.6875em) {
     .card {
-        margin-top: 36rem;
+        margin-top: 61rem;
     }
     
 }
