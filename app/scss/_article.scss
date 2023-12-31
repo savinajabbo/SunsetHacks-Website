@@ -48,11 +48,15 @@
     }
 
     &__image {
-        height: 12.5rem;
+        height: 1.5rem;
         background-color: rgba(0, 0, 0, 0);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+
+        @include breakpoint-up(medium) {
+            height: 12.5rem;
+        }
     }
 
     &__text {
