@@ -770,8 +770,8 @@ button:hover::before, .button:hover::before {
   max-width: 56rem;
   padding: 2.875rem 1.5rem;
   align-items: center;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 .card__text {
   padding-top: 0;
