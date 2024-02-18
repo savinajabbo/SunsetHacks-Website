@@ -483,6 +483,14 @@ button:hover::before, .button:hover::before {
   line-height: 1.5;
 }
 
+.git {
+  transition: all 150ms ease-in-out;
+}
+.git:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
 .articles {
   background-color: hsla(0, 0%, 100%, 0);
   transform: translate(0, 28%);
@@ -914,7 +922,7 @@ button:hover::before, .button:hover::before {
 }
 @media (max-width: 26.25em) {
   .card {
-    margin-top: 44.375rem;
+    margin-top: 47.375rem;
   }
 }
 @media (max-width: 22em) {
