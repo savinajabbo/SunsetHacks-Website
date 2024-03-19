@@ -917,7 +917,7 @@ button:hover::before, .button:hover::before {
 }
 @media (max-width: 32em) {
   .card {
-    margin-top: 32.375rem;
+    margin-top: 36rem;
   }
 }
 @media (max-width: 26.25em) {
@@ -927,7 +927,7 @@ button:hover::before, .button:hover::before {
 }
 @media (max-width: 22em) {
   .card {
-    margin-top: 49rem;
+    margin-top: 52rem;
   }
 }
 @media (max-width: 18.6875em) {
