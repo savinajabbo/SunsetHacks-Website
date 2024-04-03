@@ -1012,4 +1012,12 @@ button:hover::before, .button:hover::before {
   .icon__item {
     flex: 1;
   }
+}
+
+.clickup {
+  margin: 3rem;
+  min-height: 0;
+  background-image: none;
+  background-color: #f9dcd8;
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
